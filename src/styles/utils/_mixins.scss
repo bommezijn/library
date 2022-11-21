@@ -1,20 +1,21 @@
-/* Mixin collective */
+@use "sass:map";
+@import 'utils/variables.scss';
 
 /* Mixin for media queries
 found at https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
 */
 @mixin for-phone-only {
-  @media (max-width: 599px) { @content; }
+  @media (max-width: map.get($grid-breakpoints "sm")) { @content; }
 }
 @mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
+  @media (min-width: map.get($grid-breakpoints "md")) { @content; }
 }
 @mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
+  @media (min-width: map.get($grid-breakpoints "lg")) { @content; }
 }
 @mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
+  @media (min-width: map.get($grid-breakpoints "xl")) { @content; }
 }
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
+  @media (min-width: map.get($grid-breakpoints "xxl")) { @content; }
 }
