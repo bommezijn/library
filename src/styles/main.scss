@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+// configs and variables
+@import 'utils/variables', 'utils/mixins';
+
+// base styles
+@import 'base/reset', 'base/typography', 'base/fonts';

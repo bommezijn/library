@@ -1,11 +1,4 @@
-# Library 
-> A library of components and examples that I have recreated.
-
-## Reasoning
-The reason I am starting this project is for two reasons;
-    * To improve my development skills
-    * To make actual use of the knowledge that I find and learn.
-
+# Create T3 App
 
 This is an app bootstrapped according to the [init.tips](https://init.tips) stack, also known as the T3-Stack.
 
@@ -20,7 +13,7 @@ If you are not familiar with the different technologies used in this project, pl
 - [TailwindCSS](https://tailwindcss.com)
 - [tRPC](https://trpc.io)
 
-We also [roll our own docs](https://beta.create.t3.gg) with some summary information and links to the respective documentation.
+We also [roll our own docs](https://create.t3.gg) with some summary information and links to the respective documentation.
 
 Also checkout these awesome tutorials on `create-t3-app`.
 
@@ -31,4 +24,4 @@ Also checkout these awesome tutorials on `create-t3-app`.
 
 ## How do I deploy this?
 
-Follow our deployment guides for [Vercel](https://beta.create.t3.gg/en/deployment/vercel) and [Docker](https://beta.create.t3.gg/en/deployment/docker) for more information.
+Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
