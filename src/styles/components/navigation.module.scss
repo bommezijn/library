@@ -1,0 +1,35 @@
+.navigation {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+  &__item {
+    background-color: hsl(var(--lightning-yellow), 0.3);
+    border: 2px solid hsl(var(--lightning-yellow));
+    border-radius: 100vw;
+    padding: 0.5rem 1.5rem;
+  }
+  &__link {
+    cursor: pointer;
+    &__text {
+      color: hsl(var(--lightning-yellow));
+      font-weight: 700;
+    }
+  }
+}

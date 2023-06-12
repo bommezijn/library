@@ -16,3 +16,24 @@ a {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html {
+  font-size: 62.5%;
+}
+
+p, a, u, span, select, section, td, th, option, form, input, b, strong, ul,
+ol, li, textarea, label, button, input, iframe,
+table {
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 300;
+  // color: white;
+  @include media-breakpoint-down(md) {
+    font-size: clamp(1.6rem, calc(1.6rem + ((1vw - 5.76px) * 0.2314)), 1.911rem);
+  }
+}
+
+#main {
+  padding-top: 6rem;
+}

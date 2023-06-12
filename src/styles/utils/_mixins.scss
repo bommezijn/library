@@ -1,21 +1,33 @@
 @use "sass:map";
-@import 'utils/variables.scss';
+@import '_variables.scss';
 
 /* Mixin for media queries
 found at https://itnext.io/writing-media-queries-with-sass-mixins-3ea591ea3ea4
 */
-@mixin for-phone-only {
-  @media (max-width: map.get($grid-breakpoints "sm")) { @content; }
+// @mixin for-phone-only {
+//   @media (max-width: map.get($grid-breakpoints, "sm")) { @content; }
+// }
+// @mixin for-tablet-portrait-up {
+//   @media (min-width: map.get($grid-breakpoints, "md")) { @content; }
+// }
+// @mixin for-tablet-landscape-up {
+//   @media (min-width: map.get($grid-breakpoints, "lg")) { @content; }
+// }
+// @mixin for-desktop-up {
+//   @media (min-width: map.get($grid-breakpoints, "xl")) { @content; }
+// }
+// @mixin for-big-desktop-up {
+//   @media (min-width: map.get($grid-breakpoints, "xxl")) { @content; }
+// }
+
+@mixin media-breakpoint-down ($breakpoint) {
+  @media only screen and (max-width: $breakpoint) {
+    @content;
+  }
 }
-@mixin for-tablet-portrait-up {
-  @media (min-width: map.get($grid-breakpoints "md")) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: map.get($grid-breakpoints "lg")) { @content; }
-}
-@mixin for-desktop-up {
-  @media (min-width: map.get($grid-breakpoints "xl")) { @content; }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: map.get($grid-breakpoints "xxl")) { @content; }
+
+@mixin media-breakpoint-up ($breakpoint) {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
 }

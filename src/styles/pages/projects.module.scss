@@ -1,0 +1,7 @@
+:root {
+  --text: hsl(var(--color-text))
+}
+
+body * {
+  color: var(--text);
+}

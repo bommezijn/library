@@ -9,3 +9,17 @@ $grid-breakpoints: (
 
 /// @type Color
 $text-color: rgb(34, 34, 34) !default;
+
+:root {
+  --color-text: 0, 0%, 13%;
+  // colorslurp
+  --gorse: 55, 99%, 68%;
+  --cod-gray: 0, 0%, 10%;
+  --shark: 210, 7%, 11%;
+  --iron: 210, 2%, 81%;
+  --lightning-yellow: 42, 97%, 55%;
+  --dune: 26, 8%, 17%;
+  --pearl-bush: 34, 23%, 88%;
+  --bg: 0, 0%, 10%;
+  --background: hsl(var(--bg));
+}

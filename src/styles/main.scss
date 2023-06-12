@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
 // configs and variables
-@import 'utils/variables', 'utils/mixins';
+@import 'utils/_variables', 'utils/_mixins';
+@import 'libs/locomotive-scroll.css';
 
 // base styles
 @import 'base/reset', 'base/typography', 'base/fonts';
+
+// Components
+@import 'components/navigation.module';
+
+// Pages
+@import 'pages/index.module';
